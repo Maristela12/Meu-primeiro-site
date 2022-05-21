@@ -1,0 +1,218 @@
+/*Geral*/
+*{
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+body{
+    background-color: #CA7DF9;
+}
+a{
+    color: #EDF67D;
+    text-decoration: none;
+}
+hr{
+    border: none;
+    background-color:#724CF9;
+    height: 2px;
+    width: 20%;
+    margin: 20px auto;
+}
+p{
+    line-height: 22px;
+    padding: 0 10px;
+}
+.section_titulo{
+    font-weight: lighter;
+    color: #EDF67D;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 10px;
+
+}
+
+
+/*menu*/
+.menu_bg{
+    background-color: #564592;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 960px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.menu_Logo{
+    margin: 10px;
+}
+/*Lista*/
+.nav_lista{
+    flex-wrap: wrap;
+}
+.nav_link{
+    padding: 20px 10px;
+}
+/*Introdução*/
+.Intro{
+    color: #EDF67D;
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+
+/*Sobre Mim*/
+.sobre{
+    max-width: 960px;
+    margin: 0 auto;
+}
+.sobre-c{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.sobre-c_texto{
+    flex: 6 1 160px;
+}
+.sobre-c_img{
+    flex: 1 1 360px;
+}
+
+/*Trabalhos*/
+.curso{
+    max-width: 960px;
+    margin: 0 auto;
+}
+.curso-c{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.curso{
+    width: 280px;
+    margin: 20px;
+
+}
+.curso-titulo{
+    font-weight: 350;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 10px 0 5px 0;
+  
+}
+/*experiencias*/
+.experiencia{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.exp{
+    max-width: 240px;
+    margin: 10px;
+}
+.exp_titulo{
+    font-weight: 300;
+    font-size: 1.7;
+    margin-bottom: 5px;
+    margin-left: 10px;
+
+}
+.exp_titulo::before{
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+.exp:nth-last-of-type(3n+1) .exp_titulo::before{
+    background: #540483;
+}
+.exp:nth-last-of-type(3n+2) .exp_titulo::before{
+    background: #540483;
+}
+.exp:nth-last-of-type(3n+3) .exp_titulo::before{
+    background: #540483;
+}   
+
+@media(max-width: 800px){
+    .exp{
+        max-width: 220px;
+    }
+}
+/*Contatos*/
+.contate-me{
+    background: #540483;
+    color: #e4f03a;
+}
+.contato-c{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contato-info{
+    flex: 1 1 260px;
+    padding-left: 20px;
+    margin-right: 50px;
+}
+.contato-info_titulo{
+    font-size: 2.50rem;
+    font-weight: bold;
+}
+.contato-info_descricao{
+    font-size: italic;
+}
+.contato-form{
+    flex: 2 1 260px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contato-form_submit{
+    flex: 1 1 260px;
+    width: 192px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.25rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    background-color: #e4f03a;
+    color: #890bd8;
+    cursor: pointer;
+    border: none;
+    padding: 15px;
+}
+
+/*rodapé*/
+.contatos{
+    background-color: #4d0250;
+    padding: 55px calc((100% - 960%)/ 2);
+}
+.contatos-c{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 960px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.contatos-infor_redesocial{
+    margin-right: 20px;
+    margin-top: 30px;
+}
+.contatos-infor_redesocial:hover{
+    color: #1a1e24;
+}
+.contatos.info{
+    color: #e4f03a;
+    padding: 20px 10px;
+}
+.contatos-infor_img{
+    margin: 10px;
+}
